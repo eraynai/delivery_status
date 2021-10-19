@@ -32,5 +32,23 @@ body {
 }
 
 .main-logo {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.text-content {
+  margin: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 2rem;
+  font-size: 22px;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
 }

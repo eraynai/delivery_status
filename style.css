@@ -11,7 +11,9 @@ body {
   min-height: 100vh;
 }
 
-h2 {
+h2,
+h5,
+a {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -42,14 +44,13 @@ body {
 }
 
 .inner-container {
+  padding: 3rem 2rem;
   text-align: center;
-  padding-top: 3rem;
-  border: 2px red solid;
-  margin: 0 2rem;
 }
 
 .main-logo {
   padding-bottom: 2rem;
+  margin: auto;
 }
 
 .inner-container > h2 {
@@ -61,4 +62,37 @@ body {
 .inner-container > p {
   font-size: 14px;
   line-height: 26px;
+}
+
+.selection-menu {
+  display: flex;
+  background: #f0fff5;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+
+.menu-header {
+  width: 50%;
+  text-align: left;
+  align-self: center;
+  padding-left: 1rem;
+}
+
+.menu-header > h5 {
+  font-weight: 800;
+  font-size: 14px;
+  color: #2f463d;
+}
+
+.menu-header > h6 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #7a8f85;
+}
+
+.selection-menu > a {
+  align-self: center;
+  font-size: 13px;
+  color: #467a66;
+  padding-left: 3rem;
 }

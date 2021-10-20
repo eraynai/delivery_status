@@ -14,9 +14,17 @@ body {
   background: url('https://assets.codepen.io/6060109/ZigZag.png');
 }
 
+h5,
+h6,
+a,
+button,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .card {
   background: #fff;
-  height: 700px;
+  height: 600px;
   width: 90%;
   min-width: 300px;
   margin: 4rem auto;
@@ -39,7 +47,6 @@ body {
 
 .inner-container > h2 {
   margin: 20px 0 15px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 22px;
   color: #2f463d;
@@ -57,8 +64,8 @@ body {
   display: flex;
   background: #f0fff5;
   border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-  margin: 40px 0 20px;
+
+  margin: 40px 0 30px;
 }
 
 .food-price {
@@ -84,4 +91,50 @@ body {
   align-self: center;
   font-size: 13px;
   color: #467a66;
+  margin-left: 3rem;
+}
+
+.inner-container > button {
+  font-size: 15px;
+  font-weight: 800;
+  padding: 15px 0;
+  border: none;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  background: #46a67e;
+  filter: drop-shadow(0px 20px 20px rgba(103, 189, 153, 0.2));
+  border-radius: 5px;
+  transition: 1s ease all;
+}
+
+.inner-container > button:hover {
+  opacity: 0.8;
+  transition: 1s ease all;
+  cursor: pointer;
+}
+
+.dots {
+  margin: 3rem 0 0;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:nth-of-type(1),
+.dot:nth-of-type(3) {
+  background: #e0e0e0;
+}
+
+.dot:nth-of-type(1) {
+  margin-right: 0.5rem;
+}
+
+.dot:nth-of-type(2) {
+  background: #67bd99;
+  margin-right: 0.5rem;
 }

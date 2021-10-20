@@ -29,7 +29,7 @@ body {
 
 .card {
   background-color: #fff;
-  height: 600px;
+  height: 700px;
   width: 90%;
   max-width: 400px;
   margin: 4rem auto;
@@ -45,24 +45,27 @@ body {
 }
 
 .inner-container {
-  padding: 3rem 2rem;
+  padding: 3rem 3rem;
   text-align: center;
 }
 
 .main-logo {
   padding-bottom: 2rem;
   margin: auto;
+  width: 100px;
 }
 
 .inner-container > h2 {
   font-size: 22px;
   color: #2f463d;
   padding-bottom: 1rem;
+  height: 60px;
 }
 
 .inner-container > p {
   font-size: 14px;
   line-height: 26px;
+  color: #828282;
 }
 
 .selection-menu {
@@ -113,6 +116,12 @@ body {
   transition: 0.3s ease all;
 }
 
+.grey-btn {
+  background: #bdbdbd;
+  box-shadow: 0px 20px 20px rgba(167, 167, 167, 0.2);
+  margin-bottom: 2rem;
+}
+
 .checkout-btn:hover {
   opacity: 0.8;
   transition: 0.3s ease all;
@@ -141,4 +150,38 @@ body {
 .dot:nth-of-type(2) {
   background: #67bd99;
   margin-right: 1rem;
+}
+
+.dot-first:nth-of-type(1) {
+  background: #67bd99;
+}
+
+.dot-first:nth-of-type(2),
+.dot-first:nth-of-type(3) {
+  background: #e0e0e0;
+}
+
+.dot-third:nth-of-type(1),
+.dot-third:nth-of-type(2) {
+  background: #e0e0e0;
+}
+
+.dot-third:nth-of-type(3) {
+  background: #67bd99;
+}
+
+/* .first-para {
+  padding-bottom: 1rem;
+} */
+
+button.checkout-btn.grey-btn.grey-btn-first,
+button.checkout-btn.grey-btn {
+  margin-bottom: 8rem;
+}
+
+@media (min-width: 768px) {
+  .card-collection {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

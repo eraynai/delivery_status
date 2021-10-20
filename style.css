@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -12,15 +27,38 @@ body {
 .card {
   background-color: #fff;
   height: 600px;
-  width: 300px;
+  width: 90%;
+  max-width: 400px;
   margin: 4rem auto;
   position: relative;
   border-radius: 5px;
   box-shadow: 0px 40px 40px -20px #3c7b61;
 }
 
-.card > img {
+.close-btn {
   position: absolute;
   right: 15px;
   top: 15px;
+}
+
+.inner-container {
+  text-align: center;
+  padding-top: 3rem;
+  border: 2px red solid;
+  margin: 0 2rem;
+}
+
+.main-logo {
+  padding-bottom: 2rem;
+}
+
+.inner-container > h2 {
+  font-size: 22px;
+  color: #2f463d;
+  padding-bottom: 1rem;
+}
+
+.inner-container > p {
+  font-size: 14px;
+  line-height: 26px;
 }

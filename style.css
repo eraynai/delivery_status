@@ -29,9 +29,9 @@ body {
 
 .card {
   background-color: #fff;
-  height: 700px;
+  height: 600px;
   width: 90%;
-  max-width: 400px;
+  max-width: 500px;
   margin: 4rem auto;
   position: relative;
   border-radius: 5px;
@@ -174,14 +174,26 @@ body {
   padding-bottom: 1rem;
 } */
 
-button.checkout-btn.grey-btn.grey-btn-first,
-button.checkout-btn.grey-btn {
-  margin-bottom: 8rem;
-}
-
 @media (min-width: 768px) {
   .card-collection {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+  }
+
+  .card {
+    margin: 4rem 180px;
+  }
+
+  .card.middle {
+    position: absolute;
+    z-index: 1;
+    height: 640px;
+    top: -16px;
+  }
+  button.checkout-btn.grey-btn.grey-btn-first,
+  button.checkout-btn.grey-btn {
+    margin-bottom: 4rem;
+    margin-top: 5rem;
   }
 }

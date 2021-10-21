@@ -182,11 +182,10 @@ body {
   }
 
   .card {
-    margin: 4rem 180px;
+    margin: 4rem 0;
   }
 
   .card.middle {
-    position: absolute;
     z-index: 1;
     height: 640px;
     top: -16px;
